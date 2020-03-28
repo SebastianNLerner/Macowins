@@ -6,7 +6,7 @@ int valorRecargo = 10;
  	Tipo tipo;
  	double precioBase;
  	
- 	int precioFinal() {
+ 	double precioFinal() {
  		return estado.precio(this);
  	}
  	
@@ -23,7 +23,7 @@ int valorRecargo = 10;
  	int precioPrendasBase = prenda.precioFinak()*cantidadPrendas;
  	int montoRecargo = venta.metodoDePago().calcularRecargo(precioPrendasBase);
  	
- 	int pagoParcial() {
+ 	double pagoParcial() {
  		return precioPrendasBase + montoRecargo;
  	}
  }
